@@ -119,6 +119,7 @@ let paddle2 = {
         // Check collision with walls
         if (ballY - ballRadius < 0 || ballY + ballRadius > gameHeight) {
             ballYDirection = -ballYDirection;
+            ballSpeed +=  0.8;
         }
 
         // Check if ball goes out of bounds
